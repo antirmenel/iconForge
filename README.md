@@ -18,7 +18,7 @@ It allows you to resize an image to multiple predefined or custom sizes and opti
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/antirmenel/iconForge.git
 ```
 2. Install the required dependencies:
 
