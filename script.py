@@ -26,11 +26,9 @@ def resize_image(image_path, output_folder, icon_sizes, convert_to_png):
         try:
             tqdm.write(f"🔄 Resizing to {size}px...")
             
-            # Maintain aspect ratio and resize the image
             img_copy = img.copy()
             img_copy.thumbnail((size, size), Image.Resampling.LANCZOS)
             
-            # Create a square image by adding padding
             new_img = Image.new("RGBA", (size, size), (255, 255, 255, 0))
             left = (size - img_copy.width) // 2
             top = (size - img_copy.height) // 2
